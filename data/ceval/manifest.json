@@ -1,0 +1,1059 @@
+{
+  "name": "C-Eval 本组自选子集",
+  "dataset": "https://huggingface.co/datasets/ceval/ceval-exam",
+  "revision": "617524a00b307ff6f9933702f724131fe12ca7ce",
+  "license": "CC BY-NC-SA 4.0",
+  "seed": 20261123,
+  "selection": "Per subject, keep complete labeled rows; sort SHA-256 of seed:subject:split:id, then ID; take the first 40.",
+  "subject_rationale": "Equal representation for computing, mathematics, geography, literature and professional accounting.",
+  "total": 200,
+  "sources": [
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/computer_network/test-00000-of-00001.parquet",
+      "sha256": "add0701bdef50f2bac363f2c807e91880f7814e71613f1aaf6a77c25ea999f47",
+      "available": 171,
+      "eligible": 171,
+      "selected": 40
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_mathematics/test-00000-of-00001.parquet",
+      "sha256": "e87e6eb82977defc7fe98286a881ea5c0a41c08e25f78b11cbeb495572bc88e8",
+      "available": 166,
+      "eligible": 166,
+      "selected": 40
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_geography/test-00000-of-00001.parquet",
+      "sha256": "bab45b5c483e2828a17405ba92344379a6de4dc6653ce4664e9eafe0504e6566",
+      "available": 178,
+      "eligible": 178,
+      "selected": 40
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/chinese_language_and_literature/test-00000-of-00001.parquet",
+      "sha256": "70d7d6f575a2c48d0b781502113d69fb748f86d7392cff28f8a25eb5c28a421c",
+      "available": 209,
+      "eligible": 209,
+      "selected": 40
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/accountant/test-00000-of-00001.parquet",
+      "sha256": "37e61cdf5bf63420fe45dfe5a30a306cdd165a485f7dda38b6b4c617ca757eab",
+      "available": 443,
+      "eligible": 443,
+      "selected": 40
+    }
+  ],
+  "items": [
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 30
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 81
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 62
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 53
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 150
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 90
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 111
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 121
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 103
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 71
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 4
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 73
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 27
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 21
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 124
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 126
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 47
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 23
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 151
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 34
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 131
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 83
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 167
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 52
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 0
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 128
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 170
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 3
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 60
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 55
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 149
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 147
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 87
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 158
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 68
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 105
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 77
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 66
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 138
+    },
+    {
+      "subject": "computer_network",
+      "split": "test",
+      "id": 145
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 94
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 50
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 8
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 104
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 84
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 91
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 52
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 164
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 18
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 19
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 77
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 148
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 158
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 7
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 78
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 6
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 117
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 110
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 59
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 122
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 115
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 24
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 47
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 120
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 68
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 5
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 13
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 42
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 121
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 53
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 34
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 131
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 123
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 35
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 163
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 154
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 149
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 76
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 134
+    },
+    {
+      "subject": "high_school_mathematics",
+      "split": "test",
+      "id": 105
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 66
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 166
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 106
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 126
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 175
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 16
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 35
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 32
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 15
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 133
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 168
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 28
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 37
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 94
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 58
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 91
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 10
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 144
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 73
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 88
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 157
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 163
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 24
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 96
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 93
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 129
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 64
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 160
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 20
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 39
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 53
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 149
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 55
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 52
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 40
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 60
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 164
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 71
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 0
+    },
+    {
+      "subject": "high_school_geography",
+      "split": "test",
+      "id": 102
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 13
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 114
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 89
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 206
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 185
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 179
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 171
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 74
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 129
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 124
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 9
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 104
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 24
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 169
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 81
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 106
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 108
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 149
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 12
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 5
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 170
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 155
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 73
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 28
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 194
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 70
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 96
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 165
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 134
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 35
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 146
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 144
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 175
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 51
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 101
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 148
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 161
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 125
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 182
+    },
+    {
+      "subject": "chinese_language_and_literature",
+      "split": "test",
+      "id": 58
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 21
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 142
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 340
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 115
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 206
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 60
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 296
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 103
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 430
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 37
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 46
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 226
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 383
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 408
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 173
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 333
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 253
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 18
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 258
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 52
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 349
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 339
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 405
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 374
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 391
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 215
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 410
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 217
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 422
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 98
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 282
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 269
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 435
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 58
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 192
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 414
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 131
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 371
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 62
+    },
+    {
+      "subject": "accountant",
+      "split": "test",
+      "id": 27
+    }
+  ]
+}

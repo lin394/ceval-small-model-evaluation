@@ -1,0 +1,8 @@
+/.venv/
+/.uv-cache/
+/.uv-python/
+/.hf-cache/
+/.qwen-deps/
+/.ceval-deps/
+/models/
+__pycache__/
