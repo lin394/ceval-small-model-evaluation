@@ -14,6 +14,7 @@ from qwen_smoke_test import generate
 
 ROOT = Path(__file__).resolve().parent
 PROMPT = "请回答下面的中文四选一题。只输出一行，格式为“最终答案：A”，将 A 替换为你的选项。"
+STRICT_PROMPT = "请回答下面的中文四选一题。只输出一行 `最终答案：X`，X 必须是 A、B、C、D 之一，选项后不加文字或标点。"
 ANSWER = re.compile(r"最终答案[:：][ \t]*([A-D])")
 
 
@@ -44,7 +45,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--smoke", action="store_true")
     parser.add_argument("--owner", default=None)
+    parser.add_argument("--variant", choices=("baseline", "strict-prompt"), default="baseline")
     args = parser.parse_args()
+    prompt_instruction = STRICT_PROMPT if args.variant == "strict-prompt" else PROMPT
     data = ROOT / "data" / "ceval"
     manifest = json.loads((data / "manifest.json").read_text(encoding="utf-8"))
     questions = read_jsonl(data / "questions.jsonl")
@@ -67,7 +70,7 @@ def main():
         ["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True,
     )
     output = ROOT / "runs" / (
-        ("baseline-smoke-" if args.smoke else "baseline-") + datetime.now().strftime("%Y%m%d-%H%M%S")
+        f"{args.variant}{'-smoke' if args.smoke else ''}-" + datetime.now().strftime("%Y%m%d-%H%M%S")
     )
     output.mkdir(parents=True)
     config = {
@@ -81,7 +84,7 @@ def main():
         "torch": str(torch.__version__), "transformers": transformers.__version__,
         "device": torch.cuda.get_device_name(), "dtype": "float16",
         "threads": torch.get_num_threads(), "interop_threads": torch.get_num_interop_threads(),
-        "prompt": PROMPT, "answer_regex": ANSWER.pattern, "do_sample": False,
+        "prompt": prompt_instruction, "answer_regex": ANSWER.pattern, "do_sample": False,
         "max_new_tokens": 64, "timing": "Tokenization through decoding; no warm-up.",
     }
     (output / "config.json").write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -89,7 +92,7 @@ def main():
     with (output / "predictions.jsonl").open("x", encoding="utf-8") as log:
         for row in questions:
             choices = "\n".join(f"{letter}. {row['choices'][letter]}" for letter in "ABCD")
-            prompt = f"{PROMPT}\n\n{row['question']}\n{choices}"
+            prompt = f"{prompt_instruction}\n\n{row['question']}\n{choices}"
             messages = [{"role": "user", "content": prompt}]
             rendered = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
             raw, metrics = generate(model, tokenizer, "cuda", prompt)
