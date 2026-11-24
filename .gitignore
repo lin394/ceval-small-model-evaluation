@@ -5,4 +5,13 @@
 /.qwen-deps/
 /.ceval-deps/
 /models/
+/data/ceval/source/
+/runs/**
+!/runs/*/
+!/runs/*/.gitkeep
+/qwen_trial_results.json
+/.env
+.env.*
+!.env.example
+.pytest_cache/
 __pycache__/

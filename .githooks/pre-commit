@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+
+if python_path=$(git config --path --get ceval.python); then
+    exec "$python_path" tools/check_repo.py --staged
+fi
+if command -v py >/dev/null 2>&1 && py -3 -c 'import sys' >/dev/null 2>&1; then
+    exec py -3 tools/check_repo.py --staged
+fi
+if command -v python3 >/dev/null 2>&1 && python3 -c 'import sys' >/dev/null 2>&1; then
+    exec python3 tools/check_repo.py --staged
+fi
+if command -v python >/dev/null 2>&1 && python -c 'import sys' >/dev/null 2>&1; then
+    exec python tools/check_repo.py --staged
+fi
+echo "Configure Python: git config --local ceval.python <path-to-python>" >&2
+exit 1

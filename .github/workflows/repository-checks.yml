@@ -1,0 +1,26 @@
+name: Repository checks
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate repository changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate changed files and fixed evaluation data
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          SOURCE_BRANCH: ${{ github.head_ref }}
+        run: |
+          checker="$RUNNER_TEMP/ceval_check_repo.py"
+          git show "${BASE_SHA}:tools/check_repo.py" > "$checker"
+          python3 "$checker" --base "$BASE_SHA" --branch "$SOURCE_BRANCH"

@@ -1,0 +1,6 @@
+* text=auto
+/.githooks/* text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.jsonl text eol=lf
+/data/ceval/manifest.json text eol=lf
