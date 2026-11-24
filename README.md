@@ -11,6 +11,10 @@
 
 ## 开始提交
 
+使用 AI 协作时，先让助手读取 [C-Eval 组内协作 Skill](skills/ceval-team-workflow/SKILL.md)，并告诉它你的方向。识别 `AGENTS.md` 的工具会通过仓库根目录找到该 Skill。其他工具可直接使用这句话：
+
+> 先读取并遵守 `skills/ceval-team-workflow/SKILL.md`；我是方向 [A/B/C/D] 的组员，按该方向的边界完成以下任务：[任务]。
+
 首次克隆后，在仓库目录执行下列命令。Git 钩子用 Python 3 运行。Windows 上若 Python 不在 PATH，再将最后一条中的路径替换为自己的解释器。
 
 ```powershell
@@ -45,26 +49,15 @@ git push -u origin HEAD
 
 ## 运行共享基线
 
-模型放入 `models/Qwen2.5-0.5B-Instruct/`，包含官方 Safetensors 权重、配置和 tokenizer 文件。将以下已验证的仓库版本写入 `revision.txt`。
-
-```text
-7ae557604adf67be50417f59c2c2f167def9a775
-```
-
-模型来源为 [Qwen 官方模型仓库](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)。固定题单的数据来源、版本、许可证和抽样规则见 `data/ceval/manifest.json`。
-
-以下示例复用本机已有的 CUDA 版 PyTorch 环境。替换 `$p` 后，在项目根目录执行。
+新组员请先按 [运行环境安装说明](environment/README.md) 准备依赖和模型。安装后，在项目根目录用同一个入口验收和运行正式题单。
 
 ```powershell
-$p = 'D:/Anaconda3/envs/warehouse-gpu'
-$env:PATH = "$p;$p/Library/bin;$env:PATH"
-$env:UV_CACHE_DIR = "$PWD/.uv-cache"
-uv pip install --python "$p/python.exe" --target .qwen-deps "transformers==4.57.6" "numpy==1.26.4"
-$env:PYTHONPATH = "$PWD/.qwen-deps"
-& "$p/python.exe" -X utf8 evaluate_ceval.py --variant strict-prompt --smoke
+.\environment\run.ps1 evaluate_ceval.py --variant strict-prompt --smoke
 # 联调通过后跑正式题单
-& "$p/python.exe" -X utf8 evaluate_ceval.py --variant strict-prompt --owner "执行人"
+.\environment\run.ps1 evaluate_ceval.py --variant strict-prompt --owner "执行人"
 ```
+
+固定题单的数据来源、版本、许可证和抽样规则见 `data/ceval/manifest.json`。
 
 ## 远端仓库设置
 

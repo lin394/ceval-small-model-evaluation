@@ -21,7 +21,7 @@ PRIVATE_SUFFIXES = {".pem", ".key", ".p12", ".pfx"}
 WEIGHT_SUFFIXES = {".safetensors", ".gguf", ".pt", ".pth", ".ckpt", ".onnx", ".bin"}
 LOCAL_DIRS = {
     ".venv", ".uv-cache", ".uv-python", ".hf-cache", ".qwen-deps", ".ceval-deps",
-    "__pycache__", ".pytest_cache", "models",
+    ".runtime", "__pycache__", ".pytest_cache", "models",
 }
 
 

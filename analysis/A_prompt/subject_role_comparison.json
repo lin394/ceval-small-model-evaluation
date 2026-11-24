@@ -1,0 +1,629 @@
+{
+  "dataset": "C-Eval 本组自选子集",
+  "subject_role_prefixes": {
+    "computer_network": "你是一名计算机网络工程师。",
+    "high_school_mathematics": "你是一名高中数学教师。",
+    "high_school_geography": "你是一名高中地理教师。",
+    "chinese_language_and_literature": "你是一名中国语言文学教师。",
+    "accountant": "你是一名注册会计师。"
+  },
+  "comparisons": {
+    "strict-prompt": {
+      "control_run": "strict-prompt-20261124-111505-590079",
+      "role_run": "strict-prompt-subject-role-20261124-132903-182785",
+      "accuracy_delta_pp": 3.5,
+      "format_valid_rate_delta_pp": 0.0,
+      "same_parsed_option_or_both_invalid": 179,
+      "paired_transitions": {
+        "wrong -> wrong": 117,
+        "correct -> correct": 69,
+        "wrong -> correct": 10,
+        "invalid -> invalid": 1,
+        "correct -> wrong": 3
+      },
+      "paired_transitions_by_subject": {
+        "computer_network": {
+          "wrong -> wrong": 23,
+          "correct -> correct": 14,
+          "wrong -> correct": 2,
+          "invalid -> invalid": 1
+        },
+        "high_school_mathematics": {
+          "wrong -> wrong": 25,
+          "correct -> correct": 11,
+          "wrong -> correct": 3,
+          "correct -> wrong": 1
+        },
+        "high_school_geography": {
+          "correct -> correct": 19,
+          "wrong -> wrong": 15,
+          "wrong -> correct": 4,
+          "correct -> wrong": 2
+        },
+        "chinese_language_and_literature": {
+          "wrong -> wrong": 28,
+          "correct -> correct": 12
+        },
+        "accountant": {
+          "correct -> correct": 13,
+          "wrong -> wrong": 26,
+          "wrong -> correct": 1
+        }
+      },
+      "changed_cases": {
+        "wrong -> correct": [
+          {
+            "subject": "computer_network",
+            "split": "test",
+            "id": 23,
+            "reference": "A",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：A"
+          },
+          {
+            "subject": "computer_network",
+            "split": "test",
+            "id": 68,
+            "reference": "C",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：C"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 84,
+            "reference": "C",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：C"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 24,
+            "reference": "D",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 105,
+            "reference": "D",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 10,
+            "reference": "C",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：C"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 160,
+            "reference": "A",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：A"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 149,
+            "reference": "C",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：C"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 55,
+            "reference": "A",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：A"
+          },
+          {
+            "subject": "accountant",
+            "split": "test",
+            "id": 103,
+            "reference": "A",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：A"
+          }
+        ],
+        "correct -> wrong": [
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 148,
+            "reference": "C",
+            "control_output": "最终答案：C",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 157,
+            "reference": "C",
+            "control_output": "最终答案：C",
+            "role_output": "最终答案：B"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 20,
+            "reference": "C",
+            "control_output": "最终答案：C",
+            "role_output": "最终答案：A"
+          }
+        ]
+      },
+      "control_summary": {
+        "overall": {
+          "count": 200,
+          "correct": 72,
+          "accuracy": 0.36,
+          "format_valid_rate": 0.995,
+          "length_limit_rate": 0.0,
+          "calls": 200,
+          "total_seconds": 51.8425,
+          "mean_seconds": 0.2592,
+          "mean_generated_tokens": 5.0,
+          "peak_cuda_allocated_mib": 984.68
+        },
+        "by_subject": {
+          "computer_network": {
+            "count": 40,
+            "correct": 14,
+            "accuracy": 0.35,
+            "format_valid_rate": 0.975,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 11.1372,
+            "mean_seconds": 0.2784,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 974.99
+          },
+          "high_school_mathematics": {
+            "count": 40,
+            "correct": 12,
+            "accuracy": 0.3,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.2798,
+            "mean_seconds": 0.257,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 984.68
+          },
+          "high_school_geography": {
+            "count": 40,
+            "correct": 21,
+            "accuracy": 0.525,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.3245,
+            "mean_seconds": 0.2581,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 969.1
+          },
+          "chinese_language_and_literature": {
+            "count": 40,
+            "correct": 12,
+            "accuracy": 0.3,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.031,
+            "mean_seconds": 0.2508,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 970.89
+          },
+          "accountant": {
+            "count": 40,
+            "correct": 13,
+            "accuracy": 0.325,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.07,
+            "mean_seconds": 0.2518,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 974.96
+          }
+        }
+      },
+      "role_summary": {
+        "overall": {
+          "count": 200,
+          "correct": 79,
+          "accuracy": 0.395,
+          "format_valid_rate": 0.995,
+          "length_limit_rate": 0.0,
+          "calls": 200,
+          "total_seconds": 58.8319,
+          "mean_seconds": 0.2942,
+          "mean_generated_tokens": 5.0,
+          "peak_cuda_allocated_mib": 985.39
+        },
+        "by_subject": {
+          "computer_network": {
+            "count": 40,
+            "correct": 16,
+            "accuracy": 0.4,
+            "format_valid_rate": 0.975,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 12.6837,
+            "mean_seconds": 0.3171,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 975.24
+          },
+          "high_school_mathematics": {
+            "count": 40,
+            "correct": 14,
+            "accuracy": 0.35,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 11.4035,
+            "mean_seconds": 0.2851,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 985.39
+          },
+          "high_school_geography": {
+            "count": 40,
+            "correct": 23,
+            "accuracy": 0.575,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 12.2758,
+            "mean_seconds": 0.3069,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 969.5
+          },
+          "chinese_language_and_literature": {
+            "count": 40,
+            "correct": 12,
+            "accuracy": 0.3,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 12.1256,
+            "mean_seconds": 0.3031,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 971.46
+          },
+          "accountant": {
+            "count": 40,
+            "correct": 14,
+            "accuracy": 0.35,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.3433,
+            "mean_seconds": 0.2586,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 975.16
+          }
+        }
+      }
+    },
+    "option-check": {
+      "control_run": "option-check-20261124-111612-722335",
+      "role_run": "option-check-subject-role-20261124-133017-076556",
+      "accuracy_delta_pp": 2.0,
+      "format_valid_rate_delta_pp": 0.0,
+      "same_parsed_option_or_both_invalid": 176,
+      "paired_transitions": {
+        "wrong -> wrong": 117,
+        "correct -> correct": 69,
+        "wrong -> correct": 9,
+        "correct -> wrong": 5
+      },
+      "paired_transitions_by_subject": {
+        "computer_network": {
+          "wrong -> wrong": 25,
+          "correct -> correct": 14,
+          "wrong -> correct": 1
+        },
+        "high_school_mathematics": {
+          "wrong -> wrong": 25,
+          "correct -> correct": 8,
+          "wrong -> correct": 5,
+          "correct -> wrong": 2
+        },
+        "high_school_geography": {
+          "correct -> wrong": 2,
+          "correct -> correct": 18,
+          "wrong -> wrong": 18,
+          "wrong -> correct": 2
+        },
+        "chinese_language_and_literature": {
+          "wrong -> wrong": 26,
+          "correct -> correct": 14
+        },
+        "accountant": {
+          "correct -> correct": 15,
+          "wrong -> wrong": 23,
+          "wrong -> correct": 1,
+          "correct -> wrong": 1
+        }
+      },
+      "changed_cases": {
+        "wrong -> correct": [
+          {
+            "subject": "computer_network",
+            "split": "test",
+            "id": 105,
+            "reference": "A",
+            "control_output": "最终答案：C",
+            "role_output": "最终答案：A"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 52,
+            "reference": "D",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 24,
+            "reference": "D",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 35,
+            "reference": "D",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 154,
+            "reference": "D",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 105,
+            "reference": "D",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 10,
+            "reference": "C",
+            "control_output": "最终答案：A",
+            "role_output": "最终答案：C"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 144,
+            "reference": "A",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：A"
+          },
+          {
+            "subject": "accountant",
+            "split": "test",
+            "id": 103,
+            "reference": "A",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：A"
+          }
+        ],
+        "correct -> wrong": [
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 163,
+            "reference": "B",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_mathematics",
+            "split": "test",
+            "id": 149,
+            "reference": "C",
+            "control_output": "最终答案：C",
+            "role_output": "最终答案：D"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 66,
+            "reference": "D",
+            "control_output": "最终答案：D",
+            "role_output": "最终答案：C"
+          },
+          {
+            "subject": "high_school_geography",
+            "split": "test",
+            "id": 15,
+            "reference": "C",
+            "control_output": "最终答案：C",
+            "role_output": "最终答案：A"
+          },
+          {
+            "subject": "accountant",
+            "split": "test",
+            "id": 349,
+            "reference": "B",
+            "control_output": "最终答案：B",
+            "role_output": "最终答案：C"
+          }
+        ]
+      },
+      "control_summary": {
+        "overall": {
+          "count": 200,
+          "correct": 74,
+          "accuracy": 0.37,
+          "format_valid_rate": 1.0,
+          "length_limit_rate": 0.0,
+          "calls": 200,
+          "total_seconds": 52.217,
+          "mean_seconds": 0.2611,
+          "mean_generated_tokens": 5.0,
+          "peak_cuda_allocated_mib": 989.69
+        },
+        "by_subject": {
+          "computer_network": {
+            "count": 40,
+            "correct": 14,
+            "accuracy": 0.35,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 11.2583,
+            "mean_seconds": 0.2815,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 976.89
+          },
+          "high_school_mathematics": {
+            "count": 40,
+            "correct": 10,
+            "accuracy": 0.25,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.327,
+            "mean_seconds": 0.2582,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 989.69
+          },
+          "high_school_geography": {
+            "count": 40,
+            "correct": 20,
+            "accuracy": 0.5,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.0701,
+            "mean_seconds": 0.2518,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 971.22
+          },
+          "chinese_language_and_literature": {
+            "count": 40,
+            "correct": 14,
+            "accuracy": 0.35,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.4334,
+            "mean_seconds": 0.2608,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 974.49
+          },
+          "accountant": {
+            "count": 40,
+            "correct": 16,
+            "accuracy": 0.4,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.1282,
+            "mean_seconds": 0.2532,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 976.78
+          }
+        }
+      },
+      "role_summary": {
+        "overall": {
+          "count": 200,
+          "correct": 78,
+          "accuracy": 0.39,
+          "format_valid_rate": 1.0,
+          "length_limit_rate": 0.0,
+          "calls": 200,
+          "total_seconds": 54.7115,
+          "mean_seconds": 0.2736,
+          "mean_generated_tokens": 5.0,
+          "peak_cuda_allocated_mib": 990.35
+        },
+        "by_subject": {
+          "computer_network": {
+            "count": 40,
+            "correct": 15,
+            "accuracy": 0.375,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.7897,
+            "mean_seconds": 0.2697,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 977.49
+          },
+          "high_school_mathematics": {
+            "count": 40,
+            "correct": 13,
+            "accuracy": 0.325,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 11.4489,
+            "mean_seconds": 0.2862,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 990.35
+          },
+          "high_school_geography": {
+            "count": 40,
+            "correct": 20,
+            "accuracy": 0.5,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 11.243,
+            "mean_seconds": 0.2811,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 971.73
+          },
+          "chinese_language_and_literature": {
+            "count": 40,
+            "correct": 14,
+            "accuracy": 0.35,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 11.1646,
+            "mean_seconds": 0.2791,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 974.8
+          },
+          "accountant": {
+            "count": 40,
+            "correct": 16,
+            "accuracy": 0.4,
+            "format_valid_rate": 1.0,
+            "length_limit_rate": 0.0,
+            "calls": 40,
+            "total_seconds": 10.0653,
+            "mean_seconds": 0.2516,
+            "mean_generated_tokens": 5.0,
+            "peak_cuda_allocated_mib": 977.29
+          }
+        }
+      }
+    }
+  }
+}
